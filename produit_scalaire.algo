@@ -1,0 +1,24 @@
+PROCEDURE dot_product(ps:FLOAT, v1,v2:ARRAY_OF FLOAT[2])
+VAR
+    i:INTEGER;
+BEGIN
+    FOR i FROM 0 TO 1 DO
+    WRITE("Donnez l'élément",i+1,"du veceteur v1:");
+    READ(v1[i]);
+    WRITE("Donnez l'élément",i+1,"du veceteur v2:");
+    READ(v2[i]);
+    END_FOR
+    ps:=0;
+    FOR i FROM 0 TO 1 DO
+    ps := ps + v1[i] * v2[i];
+    END_FOR
+    WRITE("Le produit scalaire de v1 et v2 est:",ps);
+END
+ALGORITHM vecteur_orthogonaux
+VAR
+    v1,v2:ARRAY_OF FLOAT[2];
+    i:INTEGER;
+    ps:FLOAT;
+BEGIN
+    set_instructions
+END
